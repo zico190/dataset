@@ -81,6 +81,15 @@ These need to be chosen and documented as **[REC]** in your thesis:
 | License | UC Regents / BAIR licence: free for **educational, research, not-for-profit** use. Commercial use needs an OTL licence [VERIFIED] | Author page: **no licence text**, only a citation request. The mirror self-declares CC-BY-4.0, but it is a **third-party repackaging** and cannot relicense. Treat as research-only until confirmed [REC] | "Research use only, no commercial use" [VERIFIED page] | Not stated on the public page. Terms come with the request form, so read them before use. The page says faces and plates are redacted |
 | **YOLO detection training without new annotation?** | **YES** | **YES** (mask ignored regions) | **NO** | **Partial / NO** (see §2.3) |
 
+### 2.1a Update (2026-10-21): BDD100K download servers
+
+- **ETH server (`dl.cv.ethz.ch`, named in the official docs):** reported unreachable since March 2026 ([bdd100k/bdd100k#356](https://github.com/bdd100k/bdd100k/issues/356)). It did not resolve from our environment either.
+- **UC Berkeley server (`dl.yf.io`, run by the dataset's lead author; IP `128.32.162.150`):** reachable. Its `/bdd100k/` directory carries the BDD100K licence and these files:
+  - `bdd100k_images_100k.zip`: 5,669,071,832 bytes, containing 100,000 images (70,000 train / 10,000 val / 20,000 test). We verified the layout and counts from the archive listing.
+  - `bdd100k_labels.zip`: 189,638,612 bytes, md5 `2d0165fd89b11025206e21a25ae1089d`. These are the official **2018** detection labels, one JSON per image, covering train, val and test. Exactly 10 categories carry `box2d`: car, truck, bus, motor, person, rider, bike, train, traffic light, traffic sign. Lanes and drivable areas are polygons only.
+  - `bdd100k_det_20_labels.zip`: **not usable.** Despite its name, it contains 2,000 test JPEGs and no labels.
+- **Consequence:** notebook 01 downloads the images and the 2018 labels from the Berkeley server automatically. The official **2020** labels (md5 `b86a3e1b…`) are used instead whenever they are placed in `raw/bdd100k/`. The label version is recorded in every report and in the data gate, and must be stated in results.
+
 ### 2.2 Per-dataset notes
 
 **BDD100K: suitable as the multi-class detection source.**
