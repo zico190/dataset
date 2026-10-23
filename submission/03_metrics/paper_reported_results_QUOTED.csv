@@ -1,0 +1,37 @@
+source,model,data / condition,mAP_reported_pct,fps_reported,hardware,model_size_mb
+Table 12,YOLOv7-tiny,"own dataset, RGB input",86.4,37.39,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",11.8
+Table 12,YOLOv7-tiny,"own dataset, Gray input",83.7,36.83,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",11.8
+Table 12,YOLOv7-tiny,"own dataset, Green input",80,33.95,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",11.8
+Table 12,YOLOv8-nano,"own dataset, RGB input",89.3,74.67,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",6
+Table 12,YOLOv8-nano,"own dataset, Gray input",90.2,73.56,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",6
+Table 12,YOLOv8-nano,"own dataset, Green input",94.9,75.36,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",6
+Table 12,YOLOv8-small,"own dataset, RGB input",90.5,69.59,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",21.5
+Table 12,YOLOv8-small,"own dataset, Gray input",91,69.1,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",21.5
+Table 12,YOLOv8-small,"own dataset, Green input",95,70.07,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",21.5
+Table 12,YOLO-NAS-small,"own dataset, RGB input",93.9,4.26,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",244.4
+Table 12,YOLO-NAS-small,"own dataset, Gray input",95.4,3.7,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",244.4
+Table 12,YOLO-NAS-small,"own dataset, Green input",87.9,4.81,"NVIDIA Tesla T4 (GPU workstation, per Sec. IV)",244.4
+Table 13,YOLOv7-tiny,"KITTI, unaugmented training",67.67,,,
+Table 13,YOLOv7-tiny,"KITTI, augmented training",83.3,,,
+Table 13,YOLOv7-tiny,"PASCAL VOC, unaugmented training",80.1,,,
+Table 13,YOLOv7-tiny,"PASCAL VOC, augmented training",86.5,,,
+Table 13,YOLOv7-tiny,"Allama Shabbir Usmani, unaugmented training",81,,,
+Table 13,YOLOv7-tiny,"Allama Shabbir Usmani, augmented training",86.4,,,
+Table 13,YOLOv7-tiny,"Teen Talwar, unaugmented training",62,,,
+Table 13,YOLOv7-tiny,"Teen Talwar, augmented training",84.35,,,
+Table 13,YOLOv8-nano,"KITTI, unaugmented training",72.2,,,
+Table 13,YOLOv8-nano,"KITTI, augmented training",89,,,
+Table 13,YOLOv8-nano,"PASCAL VOC, unaugmented training",82.5,,,
+Table 13,YOLOv8-nano,"PASCAL VOC, augmented training",95,,,
+Table 13,YOLOv8-nano,"Allama Shabbir Usmani, unaugmented training",83.5,,,
+Table 13,YOLOv8-nano,"Allama Shabbir Usmani, augmented training",89.3,,,
+Table 13,YOLOv8-nano,"Teen Talwar, unaugmented training",75,,,
+Table 13,YOLOv8-nano,"Teen Talwar, augmented training",88.5,,,
+Table 15,YOLOv7-tiny,"Allama Shabbir Usmani (edge, TensorRT)",82,23,Jetson Nano,
+Table 15,YOLOv7-tiny,"Allama Shabbir Usmani (edge, TensorRT)",82,27,Jetson Xavier,
+Table 15,YOLOv8-nano,"Allama Shabbir Usmani (edge, TensorRT)",83.7,,Jetson Nano,
+Table 15,YOLOv8-nano,"Allama Shabbir Usmani (edge, TensorRT)",83.7,35,Jetson Xavier,
+Table 15,YOLOv7-tiny,"Teen Talwar (edge, TensorRT)",78.4,19,Jetson Nano,
+Table 15,YOLOv7-tiny,"Teen Talwar (edge, TensorRT)",78.4,24,Jetson Xavier,
+Table 15,YOLOv8-nano,"Teen Talwar (edge, TensorRT)",81.45,,Jetson Nano,
+Table 15,YOLOv8-nano,"Teen Talwar (edge, TensorRT)",81.45,33.5,Jetson Xavier,

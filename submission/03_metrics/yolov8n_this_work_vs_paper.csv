@@ -1,0 +1,7 @@
+source,dataset,classes,train_images,epochs,map_value,fps,model_size_mb,comparable
+this work · E1,UA-DETRAC,1,6949,50/50,mAP@50 0.918 / mAP@50-95 0.670,"189.8 (Tesla T4, PyTorch FP32)",5.9,reference (our protocol)
+this work · E2,BDD100K,4,20000,27/50,mAP@50 0.491 / mAP@50-95 0.318,"241.1 (Tesla T4, PyTorch FP32)",5.9,reference (our protocol)
+this work · E2c,BDD100K,4,20000,50/50,mAP@50 0.498 / mAP@50-95 0.325,"239.1 (Tesla T4, PyTorch FP32)",5.9,reference (our protocol)
+paper · Table 12 (RGB),private Karachi dataset,8,"2,182 (augmented)",100,mAP 89.30% (IoU threshold not stated),"74.67 (Tesla T4, protocol not stated)",6.0,NO - different dataset/classes; mAP definition and FPS protocol unknown
+paper · Table 15 (Allama Shabbir Usmani),Allama Shabbir Usmani intersection (private),8,"2,182 (augmented)",100,mAP 83.7% (IoU threshold not stated),"35 (Jetson Xavier NX, TensorRT)",not reported,"NO - different dataset/classes and device (edge, TensorRT)"
+paper · Table 15 (Teen Talwar),Teen Talwar intersection (private),8,"2,182 (augmented)",100,mAP 81.45% (IoU threshold not stated),"33.5 (Jetson Xavier NX, TensorRT)",not reported,"NO - different dataset/classes and device (edge, TensorRT)"

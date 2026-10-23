@@ -1,0 +1,15 @@
+experiment,evidence,result
+E1,no overlap / duplicates across splits (nb01),PASS
+E1,file lists equal the validated gate manifest (nb02),PASS
+E1,training used the train-only YAML (no test key),PASS
+E1,checkpoint selected on validation metric,PASS
+E2,no overlap / duplicates across splits (nb01),PASS
+E2,file lists equal the validated gate manifest (nb02),PASS
+E2,training subset (20000 imgs) inside train split,PASS
+E2,training used the train-only YAML (no test key),PASS
+E2,checkpoint selected on validation metric,PASS
+E2c,no overlap / duplicates across splits (nb01),PASS
+E2c,file lists equal the validated gate manifest (nb02),PASS
+E2c,training subset (20000 imgs) inside train split,PASS
+E2c,training used the train-only YAML (no test key),PASS
+E2c,checkpoint selected on validation metric,PASS
